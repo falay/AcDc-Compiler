@@ -1,0 +1,10 @@
+i myVariable
+f XD
+f GARO
+myVariable = 10
+XD = myVariable*5/12
+GARO = XD + 10 / 2 * 356
+GARO = GARO + GARO
+p myVariable
+p XD
+p GARO
