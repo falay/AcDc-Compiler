@@ -3,14 +3,14 @@ AcDc Compiler
 Introduction
 ------------
 The implementation of the compiler of the ac language :
-* Implement 4 phases of a general compiler. 
-* Support constant folding optimization.
+*  Implement 4 phases of a general compiler. 
+*  Support constant folding optimization.
 
 Compatibility
 -------------
 AcDc compiler is capable of compiling ac language:
-* Support integer and floating number declaration and computaion.
-* Support assignment and print statement.
+*  Support integer and floating number declaration and computaion.
+*  Support assignment and print statement.
 
 Usage 
 -------------
