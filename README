@@ -1,21 +1,29 @@
-# AcDc Compiler
+# Simulating-a-file-system
 
 Introduction
 ------------
-The implementation of the compiler of C--, the subset of C language :
-*  Implement 4 phases of a general compiler. 
-*  Generates java bytecode running on JVM.
+The implementation of the simulation of an unix-based file system.
+*  Implement 7 commands: 
+```
+ls, cd, mkdir, read, write, rm, rmdir
+```
+* The form of the usage of the *read, write* commands:
+```
+write [file path] "file content"
+```
+It creates a new file if the file name does not exit, it appends the contents to the file if it already exists.
 
-Compatibility
--------------
-C-- compiler is capable of the following features:
-*  Support integer and floating number declaration and computaion.
-*  Support assignment, print, read, function call statement.
-*  Support control flow statement, for and while.
-*  Support function declaration and definition.
+```
+read [file path]
+```
+It outputs the corresponding file content of file path. 
+
+* The other 5 commands have the same function in the common unix based file system.
+
 
 Usage 
 -------------
+Compiling:
 ```
 make
 ```
@@ -23,16 +31,9 @@ or
 ```
 make clean all
 ```
-to compile the source
+Executing:
 
 ```
-./parser [file.c] [target.j]
+./fileSystem
 ```
-It generates java bytecode which is a stack machine code,
-using jasmin package to generate the assembly code from the bytecode.
 
-Script to run
-```
-make
-sh runner.sh target.j
-```
